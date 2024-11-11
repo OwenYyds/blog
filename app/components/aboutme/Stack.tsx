@@ -13,7 +13,7 @@ const stackItem = [
 
 function Stack() {
   return (
-    <section className="py-16 glass">
+    <section id="stack" className="py-16 glass">
       <div className="max-w-[1200px] mx-auto px-4 text-center">
         <h2 className="text-5xl text-gray-200 font-bold mb-4">My Stack</h2>
         <div className="grid sm:grid-cols-3 lg:grid-cols-5 gap-2">

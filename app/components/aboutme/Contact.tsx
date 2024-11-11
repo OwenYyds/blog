@@ -7,14 +7,14 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="py-32 text-white max-w-[1200px] mx-auto px-4"
+      className="overflow-x-clip py-32 text-white container mx-auto px-4"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="grid lg:grid-cols-2 gap-16"
+        className=" grid lg:grid-cols-2 gap-16"
       >
         <div className="space-y-12">
           <motion.h2
@@ -23,7 +23,7 @@ function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-6xl font-bold text-gray-300"
           >
-            Get in <span className="text-gray-500">touch</span>
+            Get in <span className="text-purple-300">touch</span>
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -35,7 +35,7 @@ function Contact() {
               <p className="text-lg text-gray-300">Phone</p>
               <a
                 href="tel:+123213213"
-                className="text-2xl font-semibold hover:text-gray-400 transition duration-300 flex items-center gap-2"
+                className="text-2xl font-semibold hover:text-purple-400 transition duration-300 flex items-center gap-2"
               >
                 +86 176 7120 3920
               </a>
@@ -45,7 +45,7 @@ function Contact() {
               <p className="text-lg text-gray-300">Email</p>
               <a
                 href="youngwhenball@gmail.com"
-                className="text-2xl font-semibold hover:text-gray-400 transition duration-300 flex items-center gap-2"
+                className="text-2xl font-semibold hover:text-purple-400 transition duration-300 flex items-center gap-2"
               >
                 youngwhenball@gmail.com
               </a>
