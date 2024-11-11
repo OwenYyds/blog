@@ -42,7 +42,7 @@ function Hero() {
             Open for work
           </span>
           <h1 className="text-white/40 text-5xl md:text-7xl font-black">
-            Hi, I'm
+            Hi, I&apos;m
           </h1>
           <h1
             className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text font-black leading-tight
