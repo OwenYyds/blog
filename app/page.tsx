@@ -1,4 +1,5 @@
 import Contact from "./components/aboutme/Contact";
+import { Footer } from "./components/aboutme/Footer";
 import Hero from "./components/aboutme/Hero";
 import KeyMetrics from "./components/aboutme/KeyMetrics";
 import LogoAnimation from "./components/aboutme/LogoAnimation";
@@ -18,6 +19,7 @@ export default function Home() {
       <KeyMetrics />
       <Services />
       <Contact />
+      <Footer />
     </>
   );
 }
