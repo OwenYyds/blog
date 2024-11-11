@@ -53,7 +53,7 @@ function Hero() {
           </h1>
           <Image src={img} alt="profilePic" width={250} />
           <p className="my-6 max-w-xl text-center">
-            Fullstack DEveloper based in Shanghai, with 3 years of experience
+            Fullstack Developer based in Shanghai, with 3 years of experience
           </p>
 
           <motion.button
