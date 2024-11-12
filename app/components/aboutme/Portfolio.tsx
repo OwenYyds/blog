@@ -53,10 +53,9 @@ function Portfolio() {
       repeat: Infinity,
       repeatType: "mirror",
     });
-    console.log("animate loaded");
   }, [color]);
 
-  const backgroundImage = useMotionTemplate`radial-gradient(125%, 125% at 50% 0%, #000 50%, ${color})`;
+  const backgroundImage = useMotionTemplate`radial-gradient(ellipse 125% 125% at 50% 0%, #000 50%, ${color})`;
 
   return (
     <motion.section

@@ -9,33 +9,27 @@ const services = [
   },
   {
     id: "02",
-    title: "SEO Optimization",
+    title: "Web Development",
     description:
-      "Enhancing your website's visibility and ranking on search engines through strategic keyword integration and technical optimization.",
+      "Building robust and scalable web applications using the latest technologies and best practices.",
   },
   {
     id: "03",
-    title: "UX/UI Design",
+    title: "Backend Development",
     description:
-      "Creating intuitive and engaging user experiences and interfaces that prioritize user satisfaction and ease of use.",
+      "Developing server-side logic and databases to ensure seamless data integration and optimal performance.",
   },
   {
     id: "04",
-    title: "Digital Marketing",
+    title: "CI/CD Pipelines",
     description:
-      "Strategizing and executing comprehensive digital marketing campaigns to boost your online presence and engagement.",
+      "Setting up automated workflows to streamline the development process and ensure code quality and deployment reliability.",
   },
   {
     id: "05",
-    title: "Content Creation",
+    title: "Azure Cloud Services",
     description:
-      "Crafting engaging and relevant content, including blogs, videos, and graphics, to connect with your audience and enhance your brand story.",
-  },
-  {
-    id: "06",
-    title: "Social Media Management",
-    description:
-      "Managing your social media channels to build brand awareness, engage your audience, and grow your online presence.",
+      "Leveraging Azure's cloud infrastructure to deploy and scale your applications with ease and efficiency.",
   },
 ];
 

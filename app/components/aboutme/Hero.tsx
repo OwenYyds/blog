@@ -21,20 +21,20 @@ function Hero() {
     // skipcq: JS-0328  to skip code analysis for this line
     animate(color, COLORS_TOP, {
       ease: "easeInOut",
-      duration: 10,
+      duration: 5,
       repeat: Infinity,
       repeatType: "mirror",
     });
-  }, [color]);
+  }, []);
 
-  const backgroundColor = useMotionTemplate`radial-gradient(125%, 125% at 50% 0%, #000 50%, ${color})`;
+  const backgroundImage = useMotionTemplate`radial-gradient(ellipse 125% 125% at 50% 0%, #000 50%, ${color})`;
   const border = useMotionTemplate`1px solid ${color}`;
   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
 
   return (
     <motion.section
-      style={{ background: backgroundColor }}
-      className="relative grid min-h-screen place-content-center overflow-hidden px-4 py-24 text-gray-200"
+      style={{ background: backgroundImage }}
+      className="relative grid min-h-screen place-content-center px-4 py-24 text-gray-200"
     >
       <div className="z-10 flex flex-col items-center">
         <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-3 pt-1.5 text-sm">
