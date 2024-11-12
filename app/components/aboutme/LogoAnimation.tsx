@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 import Image from "next/image";
 import { motion } from "framer-motion";
 import udemy from "../../assets/udemy.png";
@@ -11,26 +9,26 @@ import logitech from "../../assets/logitech.png";
 import oracle from "../../assets/oracle.png";
 
 const images = [
-  { src: udemy, alt: "figma" },
-  { src: fiverr, alt: "fiverr" },
-  { src: elementor, alt: "elementor" },
-  { src: logitech, alt: "logitech" },
-  { src: oracle, alt: "oracle" },
-  { src: udemy, alt: "figma" },
-  { src: fiverr, alt: "fiverr" },
-  { src: elementor, alt: "elementor" },
-  { src: logitech, alt: "logitech" },
-  { src: oracle, alt: "oracle" },
-  { src: udemy, alt: "figma" },
-  { src: fiverr, alt: "fiverr" },
-  { src: elementor, alt: "elementor" },
-  { src: logitech, alt: "logitech" },
-  { src: oracle, alt: "oracle" },
-  { src: udemy, alt: "figma" },
-  { src: fiverr, alt: "fiverr" },
-  { src: elementor, alt: "elementor" },
-  { src: logitech, alt: "logitech" },
-  { src: oracle, alt: "oracle" },
+  { id: 1, src: udemy, alt: "figma" },
+  { id: 2, src: fiverr, alt: "fiverr" },
+  { id: 3, src: elementor, alt: "elementor" },
+  { id: 4, src: logitech, alt: "logitech" },
+  { id: 5, src: oracle, alt: "oracle" },
+  { id: 6, src: udemy, alt: "figma" },
+  { id: 7, src: fiverr, alt: "fiverr" },
+  { id: 8, src: elementor, alt: "elementor" },
+  { id: 9, src: logitech, alt: "logitech" },
+  { id: 10, src: oracle, alt: "oracle" },
+  { id: 11, src: udemy, alt: "figma" },
+  { id: 12, src: fiverr, alt: "fiverr" },
+  { id: 13, src: elementor, alt: "elementor" },
+  { id: 14, src: logitech, alt: "logitech" },
+  { id: 15, src: oracle, alt: "oracle" },
+  { id: 16, src: udemy, alt: "figma" },
+  { id: 17, src: fiverr, alt: "fiverr" },
+  { id: 18, src: elementor, alt: "elementor" },
+  { id: 19, src: logitech, alt: "logitech" },
+  { id: 20, src: oracle, alt: "oracle" },
 ];
 
 function LogoAnimation() {
@@ -50,8 +48,13 @@ function LogoAnimation() {
               repeatType: "loop",
             }}
           >
-            {images.map((image, index) => (
-              <Image key={index} src={image.src} alt={image.alt} height={30} />
+            {images.map((image) => (
+              <Image
+                key={image.id}
+                src={image.src}
+                alt={image.alt}
+                height={30}
+              />
             ))}
           </motion.div>
         </div>

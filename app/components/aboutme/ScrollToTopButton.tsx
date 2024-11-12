@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 
-const ScrollToTopButton: React.FC = () => {
+function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -15,12 +15,12 @@ const ScrollToTopButton: React.FC = () => {
     }
   };
 
-  const scrollToTop = () => {
+  const scrollToTop = useCallback(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  };
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", toggleVisibility);
@@ -54,6 +54,6 @@ const ScrollToTopButton: React.FC = () => {
       )}
     </div>
   );
-};
+}
 
 export default ScrollToTopButton;
