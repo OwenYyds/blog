@@ -4,9 +4,9 @@ import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const navLinks = [
-  { name: "About", path: "#about" },
-  { name: "Portfolio", path: "#portfolio" },
   { name: "Stack", path: "#stack" },
+  { name: "Portfolio", path: "#portfolio" },
+  { name: "Metrics", path: "#metric" },
   { name: "Contact", path: "#contact" },
 ];
 
@@ -17,8 +17,12 @@ function Navbar() {
     setNav(!nav);
   };
 
+  const closeNav = () => {
+    setNav(false);
+  };
+
   return (
-    <div className="z-50 fixed justify-center w-full text-violet-600 font-bold">
+    <div className="z-50 fixed justify-center w-full text-purple-400 font-bold">
       <div className="border border-white/20 mt-8 backdrop-blur-3xl rounded-3xl hidden md:flex items-center justify-center p-2 max-w-[400px] mx-auto">
         <ul className="flex flex-row p-2 space-x-8">
           {navLinks.map((link) => (
@@ -36,7 +40,7 @@ function Navbar() {
 
       <div
         onClick={toggleNav}
-        className="md:hidden absolute top-5 right-14 border roudnded z-50 text-slate-950/70 border-blue-600/60 p-2"
+        className="md:hidden absolute top-5 right-14 border roudnded z-50 text-white/70 border-blue-600/60 p-2"
       >
         {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
       </div>
@@ -49,7 +53,7 @@ function Navbar() {
         <ul className="flex flex-col items-center justify-center space-y-8 h-full">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <Link href={link.path} className="text-5xl">
+              <Link onClick={closeNav} href={link.path} className="text-5xl">
                 {link.name}
               </Link>
             </li>

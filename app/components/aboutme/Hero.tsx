@@ -41,7 +41,7 @@ function Hero() {
           <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-3 pt-1.5 text-sm">
             Open for work
           </span>
-          <h1 className="text-white/40 text-5xl md:text-7xl font-black">
+          <h1 className="mt-1 text-white/40 text-5xl md:text-7xl font-black">
             Hi, I&apos;m
           </h1>
           <h1
