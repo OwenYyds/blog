@@ -25,7 +25,7 @@ function Hero() {
       repeat: Infinity,
       repeatType: "mirror",
     });
-  }, []);
+  });
 
   const backgroundImage = useMotionTemplate`radial-gradient(ellipse 125% 125% at 50% 0%, #000 50%, ${color})`;
   const border = useMotionTemplate`1px solid ${color}`;
